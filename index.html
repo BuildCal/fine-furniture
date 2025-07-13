@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bradley Caldon | Private Atelier</title>
-    <meta name="description" content="Exceptional furniture artistry. Limited annual editions for discerning connoisseurs.">
+    <meta name="description" content="Exceptional handcrafted furniture of museum quality. Limited annual collection for discerning connoisseurs.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Crimson+Text:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -27,27 +27,26 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 0 40px;
+            padding: 0 30px;
         }
 
-        /* Luxury Typography */
+        /* Typography */
         .playfair {
             font-family: 'Playfair Display', Georgia, serif;
         }
 
         /* Header */
         header {
-            padding: 100px 0 60px;
-            border-bottom: 1px solid #d8d8d8;
+            padding: 80px 0 50px;
+            border-bottom: 1px solid #e8e8e8;
             position: relative;
-            background: linear-gradient(180deg, #fcfcfc 0%, #f9f9f9 100%);
         }
 
         .masthead {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
 
         .atelier-mark {
@@ -140,11 +139,10 @@
 
         /* Hero Section */
         .hero {
-            padding: 120px 0 100px;
+            padding: 100px 0 80px;
             text-align: center;
-            max-width: 850px;
+            max-width: 900px;
             margin: 0 auto;
-            position: relative;
         }
 
         .hero-title {
@@ -152,41 +150,31 @@
             font-size: 3.2rem;
             font-weight: 200;
             color: #0a0a0a;
-            margin-bottom: 45px;
-            line-height: 1.25;
+            margin-bottom: 35px;
+            line-height: 1.3;
             font-style: italic;
         }
 
-        .hero-subtitle {
-            font-size: 1.3rem;
-            color: #3a3a3a;
+        .hero-description {
+            font-size: 1.15rem;
+            color: #4a4a4a;
             font-weight: 300;
-            line-height: 1.8;
-            max-width: 750px;
-            margin: 0 auto 40px;
-            font-style: italic;
-        }
-
-        .exclusivity-note {
-            font-size: 0.85rem;
-            color: #888;
-            font-weight: 300;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-top: 60px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         /* Philosophy Section */
         .philosophy-section {
-            background: #0f0f0f;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
             color: #f5f5f5;
-            margin: 120px -40px 0;
-            padding: 120px 40px;
+            margin: 100px -30px;
+            padding: 100px 30px;
             position: relative;
         }
 
         .philosophy-content {
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto;
             text-align: center;
         }
@@ -198,7 +186,7 @@
             color: #f5f5f5;
             line-height: 1.4;
             font-style: italic;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
         .philosophy-attribution {
@@ -211,13 +199,13 @@
 
         /* Collection Section */
         .collection-section {
-            padding: 140px 0;
+            padding: 120px 0;
             background: linear-gradient(180deg, #fcfcfc 0%, #f8f8f8 100%);
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 100px;
+            margin-bottom: 80px;
         }
 
         .section-title {
@@ -225,7 +213,7 @@
             font-size: 2.8rem;
             font-weight: 200;
             color: #0a0a0a;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
         }
 
         .section-subtitle {
@@ -236,11 +224,95 @@
             font-style: italic;
         }
 
+        /* Collection Navigation */
+        .collection-nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .collection-selector {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .collection-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #d0d0d0;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .collection-dot.active {
+            background: #1a1a1a;
+            transform: scale(1.3);
+        }
+
+        .collection-dot:hover {
+            background: #666;
+            transform: scale(1.2);
+        }
+
+        .nav-arrow {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #c0c0c0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            user-select: none;
+            font-weight: 200;
+        }
+
+        .nav-arrow:hover {
+            color: #1a1a1a;
+            transform: scale(1.1);
+        }
+
+        .nav-arrow.disabled {
+            color: #e8e8e8;
+            cursor: not-allowed;
+        }
+
+        .collection-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #4a4a4a;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .collection-description {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
+
+        /* Collection Grid */
         .collection-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
-            gap: 90px;
-            margin-top: 80px;
+            gap: 80px;
+            margin-top: 60px;
+            opacity: 1;
+            transition: opacity 0.5s ease;
+        }
+
+        .collection-grid.transitioning {
+            opacity: 0;
         }
 
         .piece-card {
@@ -274,7 +346,7 @@
 
         .piece-image {
             width: 100%;
-            height: 360px;
+            height: 320px;
             background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
             display: flex;
             align-items: center;
@@ -299,45 +371,45 @@
         }
 
         .piece-details {
-            padding: 50px 45px;
+            padding: 45px 40px;
         }
 
         .piece-title {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 300;
             color: #0a0a0a;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             line-height: 1.3;
         }
 
         .piece-description {
             color: #4a4a4a;
-            font-size: 1rem;
-            line-height: 1.8;
-            margin-bottom: 35px;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 25px;
         }
 
         .piece-meta {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-top: 1px solid #e8e8e8;
-            padding-top: 25px;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 20px;
         }
 
         .piece-year {
-            color: #888;
+            color: #8a8a8a;
             font-size: 0.85rem;
             font-weight: 300;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
         .piece-status {
             font-size: 0.8rem;
             font-weight: 300;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             text-transform: uppercase;
             padding: 6px 14px;
             border-radius: 2px;
@@ -361,8 +433,8 @@
         /* Craftsmanship Section */
         .craftsmanship-section {
             background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
-            margin: 0 -40px;
-            padding: 120px 40px;
+            margin: 0 -30px;
+            padding: 100px 30px;
         }
 
         .craftsmanship-content {
@@ -382,8 +454,8 @@
         .craftsmanship-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 60px;
-            margin-top: 80px;
+            gap: 50px;
+            margin-top: 60px;
         }
 
         .craft-principle {
@@ -403,24 +475,24 @@
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             font-weight: 300;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             color: #0a0a0a;
         }
 
         .craft-principle p {
             color: #555;
             font-size: 0.95rem;
-            line-height: 1.8;
+            line-height: 1.7;
         }
 
         /* About Section */
         .about-section {
-            padding: 140px 0;
+            padding: 120px 0;
             background: #fcfcfc;
         }
 
         .about-content {
-            max-width: 700px;
+            max-width: 750px;
             margin: 0 auto;
             text-align: center;
         }
@@ -430,89 +502,85 @@
             font-size: 2.5rem;
             font-weight: 200;
             color: #0a0a0a;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
         }
 
         .about-text {
-            font-size: 1.1rem;
-            color: #3a3a3a;
-            line-height: 1.9;
-            margin-bottom: 35px;
+            font-size: 1.05rem;
+            color: #4a4a4a;
+            line-height: 1.8;
+            margin-bottom: 30px;
         }
 
-        /* Acquisition Section */
-        .acquisition-section {
+        /* Contact Section */
+        .contact-section {
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
             color: #f5f5f5;
-            padding: 120px 0;
+            padding: 100px 0;
             margin-top: 0;
-            position: relative;
         }
 
-        .acquisition-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent 0%, #333 50%, transparent 100%);
-        }
-
-        .acquisition-content {
-            max-width: 650px;
+        .contact-content {
+            max-width: 600px;
             margin: 0 auto;
             text-align: center;
         }
 
-        .acquisition-title {
+        .contact-title {
             font-family: 'Playfair Display', serif;
-            font-size: 2.4rem;
+            font-size: 2.2rem;
             font-weight: 200;
-            margin-bottom: 50px;
-            color: #f5f5f5;
+            margin-bottom: 40px;
         }
 
-        .acquisition-text {
-            color: #c8c8c8;
-            font-size: 1.05rem;
-            line-height: 1.8;
-            margin-bottom: 35px;
+        .contact-text {
+            color: #b8b8b8;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
         }
 
-        .acquisition-notice {
+        .contact-notice {
             font-style: italic;
             color: #aaa;
             font-size: 0.95rem;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             border-top: 1px solid #333;
-            padding-top: 35px;
+            padding-top: 30px;
         }
 
         .contact-email {
-            margin-top: 60px;
+            margin-top: 50px;
         }
 
         .contact-email a {
             color: #f5f5f5;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 300;
             letter-spacing: 1px;
             border-bottom: 1px solid #555;
-            padding-bottom: 3px;
-            transition: all 0.4s ease;
+            padding-bottom: 2px;
+            transition: all 0.3s ease;
         }
 
         .contact-email a:hover {
             border-bottom-color: #f5f5f5;
-            letter-spacing: 1.5px;
+        }
+
+        .terms-link {
+            color: #f5f5f5;
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 0.95rem;
+            margin-top: 30px;
+            display: inline-block;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
-                padding: 0 25px;
+                padding: 0 20px;
             }
 
             .brand-name {
@@ -530,29 +598,37 @@
 
             .collection-grid {
                 grid-template-columns: 1fr;
-                gap: 60px;
+                gap: 50px;
             }
 
             .piece-card {
-                margin: 0 15px;
+                margin: 0 10px;
             }
 
             nav ul {
                 flex-direction: column;
-                gap: 35px;
+                gap: 30px;
             }
 
             .philosophy-section,
             .craftsmanship-section {
-                margin-left: -25px;
-                margin-right: -25px;
-                padding-left: 25px;
-                padding-right: 25px;
+                margin-left: -20px;
+                margin-right: -20px;
+                padding-left: 20px;
+                padding-right: 20px;
             }
 
             .craftsmanship-grid {
                 grid-template-columns: 1fr;
-                gap: 50px;
+                gap: 40px;
+            }
+
+            .collection-nav {
+                gap: 20px;
+            }
+
+            .nav-arrow {
+                font-size: 1.5rem;
             }
         }
 
@@ -598,11 +674,11 @@
                 <nav>
                     <ul>
                         <li><a href="#philosophy">Philosophy</a></li>
-                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#collection">Collections</a></li>
                         <li><a href="#craftsmanship">Atelier</a></li>
                         <li><a href="#about">Provenance</a></li>
                         <li><a href="acquisition-terms.html">Acquisition Terms</a></li>
-                        <li><a href="#acquisition">Inquiries</a></li>
+                        <li><a href="#contact">Inquiries</a></li>
                     </ul>
                 </nav>
             </div>
@@ -610,11 +686,10 @@
 
         <section class="hero">
             <h2 class="hero-title playfair">Furniture of Uncompromising Excellence</h2>
-            <p class="hero-subtitle">
+            <p class="hero-description">
                 Each creation represents the culmination of traditional artistry and contemporary precision, 
                 executed with materials of exceptional provenance and techniques refined across generations.
             </p>
-            <div class="exclusivity-note">Limited to Four Annual Editions</div>
         </section>
     </div>
 
@@ -633,82 +708,29 @@
     <div class="container">
         <section id="collection" class="collection-section">
             <div class="section-header">
-                <h2 class="section-title playfair">The 2024 Collection</h2>
-                <p class="section-subtitle">Four Exceptional Creations</p>
+                <h2 class="section-title playfair">Private Collections</h2>
+                <p class="section-subtitle">Five Distinct Expressions of Artistry</p>
             </div>
 
-            <div class="collection-grid">
-                <article class="piece-card">
-                    <div class="piece-image">
-                        Walnut Executive Writing Desk
-                    </div>
-                    <div class="piece-details">
-                        <h3 class="piece-title playfair">American Black Walnut Writing Desk</h3>
-                        <p class="piece-description">
-                            Fashioned from a singular walnut of extraordinary character, this desk features precision-crafted 
-                            dovetail construction and traditional mortise-and-tenon joinery. A concealed compartment and 
-                            bespoke brass appointments complete this distinguished piece.
-                        </p>
-                        <div class="piece-meta">
-                            <span class="piece-year">Collection MMXXIV</span>
-                            <span class="piece-status available">Available</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="collection-nav">
+                <div class="nav-arrow" id="prevBtn">‹</div>
+                <div class="collection-selector">
+                    <div class="collection-dot active" data-collection="0"></div>
+                    <div class="collection-dot" data-collection="1"></div>
+                    <div class="collection-dot" data-collection="2"></div>
+                    <div class="collection-dot" data-collection="3"></div>
+                    <div class="collection-dot" data-collection="4"></div>
+                </div>
+                <div class="nav-arrow" id="nextBtn">›</div>
+            </div>
 
-                <article class="piece-card">
-                    <div class="piece-image">
-                        English Oak Refectory Table
-                    </div>
-                    <div class="piece-details">
-                        <h3 class="piece-title playfair">English Oak Refectory Table</h3>
-                        <p class="piece-description">
-                            Hewn from a three-century-old English oak of remarkable grain complexity. 
-                            Traditional trestle architecture enhanced by meticulously carved details and 
-                            finished with successive applications of hand-rubbed oil.
-                        </p>
-                        <div class="piece-meta">
-                            <span class="piece-year">Collection MMXXIV</span>
-                            <span class="piece-status reserved">Reserved</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="collection-name" id="collectionName">Origins</div>
+            <div class="collection-description" id="collectionDescription">
+                The foundational collection that established the atelier's commitment to exceptional craftsmanship and timeless design principles.
+            </div>
 
-                <article class="piece-card">
-                    <div class="piece-image">
-                        Cherry Library Cabinet
-                    </div>
-                    <div class="piece-details">
-                        <h3 class="piece-title playfair">Cherry Library Cabinet</h3>
-                        <p class="piece-description">
-                            Seven precisely adjustable shelves accommodate the most treasured volumes. 
-                            Traditional frame-and-panel construction ensures structural permanence across centuries, 
-                            with surfaces of exceptional refinement.
-                        </p>
-                        <div class="piece-meta">
-                            <span class="piece-year">Collection MMXXIII</span>
-                            <span class="piece-status acquired">Private Collection</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="piece-card">
-                    <div class="piece-image">
-                        Figured Maple Occasional Table
-                    </div>
-                    <div class="piece-details">
-                        <h3 class="piece-title playfair">Bird's-Eye Maple Occasional Table</h3>
-                        <p class="piece-description">
-                            Celebrating the extraordinary beauty of figured maple through graceful curves 
-                            that unite legs and surface in seamless harmony. Each element meticulously 
-                            finished to reveal the timber's innate magnificence.
-                        </p>
-                        <div class="piece-meta">
-                            <span class="piece-year">Collection MMXXIII</span>
-                            <span class="piece-status acquired">Private Collection</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="collection-grid" id="collectionGrid">
+                <!-- Collection content will be populated by JavaScript -->
             </div>
         </section>
     </div>
@@ -763,25 +785,25 @@
         </section>
     </div>
 
-    <section id="acquisition" class="acquisition-section">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <div class="acquisition-content">
-                <h2 class="acquisition-title playfair">Private Acquisitions</h2>
-                <p class="acquisition-text">
+            <div class="contact-content">
+                <h2 class="contact-title playfair">Private Acquisitions</h2>
+                <p class="contact-text">
                     Inquiries are welcomed exclusively from serious collectors, distinguished interior 
                     architects, and connoisseurs of exceptional craftsmanship. Each piece is accompanied 
                     by comprehensive provenance documentation and preservation guidelines.
                 </p>
-                <p class="acquisition-text">
+                <p class="contact-text">
                     The atelier maintains relationships solely with individuals and institutions 
                     who appreciate the distinction between mere furniture and objects of enduring cultural significance.
                 </p>
-                <p class="acquisition-notice">
+                <p class="contact-notice">
                     All works are presented as completed creations. Commissioned pieces are not undertaken, 
                     preserving the artistic integrity and uncompromising standards of each collection.
                 </p>
-                <p class="acquisition-text">
-                    <a href="acquisition-terms.html" style="color: #f5f5f5; text-decoration: underline; font-style: italic;">View detailed acquisition terms and policies</a>
+                <p class="contact-text">
+                    <a href="acquisition-terms.html" class="terms-link">View detailed acquisition terms and policies</a>
                 </p>
                 <div class="contact-email">
                     <a href="mailto:bradley@caldon.com">bradley@caldon.com</a>
@@ -791,7 +813,286 @@
     </section>
 
     <script>
-        // Sophisticated scrolling for navigation
+        // Collection data
+        const collections = [
+            {
+                name: "Origins",
+                description: "The foundational collection that established the atelier's commitment to exceptional craftsmanship and timeless design principles.",
+                pieces: [
+                    {
+                        image: "Heritage Writing Desk",
+                        title: "Heritage Writing Desk",
+                        description: "The inaugural piece of the atelier, crafted from reclaimed English oak with traditional hand-cut joints. This desk established the principles of functional artistry that define all subsequent works.",
+                        year: "Origins Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Craftsman's Bench",
+                        title: "Craftsman's Bench",
+                        description: "A meditation on simplicity and function, this bench celebrates the honest beauty of American cherry with minimal ornamentation and perfect proportions.",
+                        year: "Origins Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Reading Stand",
+                        title: "Adjustable Reading Stand",
+                        description: "Inspired by medieval lecterns, this piece combines traditional joinery with contemporary functionality. Crafted from figured walnut with brass accents.",
+                        year: "Origins Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Side Table",
+                        title: "Shaker-Inspired Side Table",
+                        description: "A study in restraint and proportion, this table embodies the Shaker philosophy of beauty through utility, executed in solid maple with oil finish.",
+                        year: "Origins Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    }
+                ]
+            },
+            {
+                name: "Elements",
+                description: "An exploration of raw materials and their inherent beauty, celebrating the unique character of exceptional timbers.",
+                pieces: [
+                    {
+                        image: "Burled Elm Console",
+                        title: "Burled Elm Console Table",
+                        description: "Showcasing the extraordinary grain patterns of English elm burl, this console balances dramatic visual impact with refined craftsmanship and understated elegance.",
+                        year: "Elements Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Live Edge Dining Table",
+                        title: "Live Edge Dining Table",
+                        description: "A celebration of the tree's natural form, this table preserves the organic edge of ancient oak while providing contemporary dining functionality.",
+                        year: "Elements Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Spalted Beech Cabinet",
+                        title: "Spalted Beech Display Cabinet",
+                        description: "The unique patterns created by nature's spalting process are preserved and enhanced in this striking display piece with precision-fitted glass panels.",
+                        year: "Elements Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "River Red Gum Stool",
+                        title: "Australian Red Gum Stool",
+                        description: "Carved from a single piece of river red gum, this stool celebrates the dense, rich timber unique to Australian landscapes with flowing, organic form.",
+                        year: "Elements Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    }
+                ]
+            },
+            {
+                name: "Harmonies",
+                description: "Pieces that explore the delicate balance between form and function, proportion and presence.",
+                pieces: [
+                    {
+                        image: "Geometric Bookshelf",
+                        title: "Geometric Library System",
+                        description: "Mathematical precision meets organic warmth in this modular shelving system, crafted from contrasting woods to create visual rhythm and structural harmony.",
+                        year: "Harmonies Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Curved Dining Chairs",
+                        title: "Curved Dining Chairs (Set of Six)",
+                        description: "Steam-bent ash creates flowing lines that embrace the human form while maintaining structural integrity through traditional joinery techniques.",
+                        year: "Harmonies Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Balance Coffee Table",
+                        title: "Equilibrium Coffee Table",
+                        description: "Seemingly defying gravity, this table explores visual weight and balance through carefully calculated proportions in contrasting ebony and maple.",
+                        year: "Harmonies Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Floating Nightstand",
+                        title: "Floating Nightstand Pair",
+                        description: "Wall-mounted nightstands that appear to float, crafted from seamlessly book-matched walnut with invisible joinery and integrated lighting.",
+                        year: "Harmonies Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    }
+                ]
+            },
+            {
+                name: "Resonance",
+                description: "Works that echo traditional techniques while embracing contemporary vision and innovation.",
+                pieces: [
+                    {
+                        image: "Modern Windsor Chair",
+                        title: "Contemporary Windsor Chair",
+                        description: "A reinterpretation of the classic Windsor form using modern materials and techniques while honoring the traditional proportions and comfort.",
+                        year: "Resonance Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Trestle Desk",
+                        title: "Executive Trestle Desk",
+                        description: "Medieval trestle construction meets contemporary workspace needs in this commanding desk featuring hidden cable management and precision-fitted drawers.",
+                        year: "Resonance Collection",
+                        status: "Private Collection",
+                        statusClass: "acquired"
+                    },
+                    {
+                        image: "Shoji Screen",
+                        title: "Shoji-Inspired Room Divider",
+                        description: "Japanese joinery techniques adapted for Western interiors, creating privacy and light filtration through rice paper panels in hardwood frames.",
+                        year: "Resonance Collection",
+                        status: "Reserved",
+                        statusClass: "reserved"
+                    },
+                    {
+                        image: "Campaign Chest",
+                        title: "Modern Campaign Chest",
+                        description: "Military campaign furniture reimagined for contemporary life, featuring brass hardware and modular construction in rich mahogany.",
+                        year: "Resonance Collection",
+                        status: "Available",
+                        statusClass: "available"
+                    }
+                ]
+            },
+            {
+                name: "Essence",
+                description: "The most refined expression of pure craftsmanship, representing the pinnacle of artistic and technical achievement.",
+                pieces: [
+                    {
+                        image: "Walnut Executive Desk",
+                        title: "American Black Walnut Executive Desk",
+                        description: "Fashioned from a singular walnut of extraordinary character, this desk features precision-crafted dovetail construction and traditional mortise-and-tenon joinery. A concealed compartment and bespoke brass appointments complete this distinguished piece.",
+                        year: "Essence Collection",
+                        status: "Available",
+                        statusClass: "available"
+                    },
+                    {
+                        image: "English Oak Refectory Table",
+                        title: "English Oak Refectory Table",
+                        description: "Hewn from a three-century-old English oak of remarkable grain complexity. Traditional trestle architecture enhanced by meticulously carved details and finished with successive applications of hand-rubbed oil.",
+                        year: "Essence Collection",
+                        status: "Reserved",
+                        statusClass: "reserved"
+                    },
+                    {
+                        image: "Master's Armoire",
+                        title: "Master's Wardrobe Armoire",
+                        description: "The culmination of traditional cabinet-making techniques, this armoire features hand-cut dovetails, raised panels, and custom interior fittings in exceptional cherry.",
+                        year: "Essence Collection",
+                        status: "Available",
+                        statusClass: "available"
+                    },
+                    {
+                        image: "Figured Maple Occasional Table",
+                        title: "Bird's-Eye Maple Occasional Table",
+                        description: "Celebrating the extraordinary beauty of figured maple through graceful curves that unite legs and surface in seamless harmony. Each element meticulously finished to reveal the timber's innate magnificence.",
+                        year: "Essence Collection",
+                        status: "Available",
+                        statusClass: "available"
+                    }
+                ]
+            }
+        ];
+
+        let currentCollection = 0;
+
+        function renderCollection(index) {
+            const collection = collections[index];
+            const grid = document.getElementById('collectionGrid');
+            const nameEl = document.getElementById('collectionName');
+            const descEl = document.getElementById('collectionDescription');
+            
+            // Update collection info
+            nameEl.textContent = collection.name;
+            descEl.textContent = collection.description;
+            
+            // Add transition effect
+            grid.classList.add('transitioning');
+            
+            setTimeout(() => {
+                // Clear and populate grid
+                grid.innerHTML = '';
+                
+                collection.pieces.forEach(piece => {
+                    const article = document.createElement('article');
+                    article.className = 'piece-card';
+                    article.innerHTML = `
+                        <div class="piece-image">
+                            ${piece.image}
+                        </div>
+                        <div class="piece-details">
+                            <h3 class="piece-title playfair">${piece.title}</h3>
+                            <p class="piece-description">
+                                ${piece.description}
+                            </p>
+                            <div class="piece-meta">
+                                <span class="piece-year">${piece.year}</span>
+                                <span class="piece-status ${piece.statusClass}">${piece.status}</span>
+                            </div>
+                        </div>
+                    `;
+                    grid.appendChild(article);
+                });
+                
+                // Remove transition effect
+                grid.classList.remove('transitioning');
+                
+                // Update navigation
+                updateNavigation();
+            }, 250);
+        }
+
+        function updateNavigation() {
+            // Update dots
+            document.querySelectorAll('.collection-dot').forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentCollection);
+            });
+            
+            // Update arrows
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            
+            prevBtn.classList.toggle('disabled', currentCollection === 0);
+            nextBtn.classList.toggle('disabled', currentCollection === collections.length - 1);
+        }
+
+        // Navigation event listeners
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentCollection > 0) {
+                currentCollection--;
+                renderCollection(currentCollection);
+            }
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentCollection < collections.length - 1) {
+                currentCollection++;
+                renderCollection(currentCollection);
+            }
+        });
+
+        // Dot navigation
+        document.querySelectorAll('.collection-dot').forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentCollection = index;
+                renderCollection(currentCollection);
+            });
+        });
+
+        // Smooth scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -840,14 +1141,23 @@
         });
 
         // Sophisticated hover effects for pieces
-        document.querySelectorAll('.piece-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-12px) scale(1.02)';
-            });
+        document.addEventListener('DOMContentLoaded', () => {
+            renderCollection(0);
             
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
+            // Add hover effects to dynamically created elements
+            document.addEventListener('mouseenter', function(e) {
+                if (e.target.closest('.piece-card')) {
+                    const card = e.target.closest('.piece-card');
+                    card.style.transform = 'translateY(-12px) scale(1.02)';
+                }
+            }, true);
+            
+            document.addEventListener('mouseleave', function(e) {
+                if (e.target.closest('.piece-card')) {
+                    const card = e.target.closest('.piece-card');
+                    card.style.transform = 'translateY(0) scale(1)';
+                }
+            }, true);
         });
     </script>
 </body>

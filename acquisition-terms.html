@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acquisition Terms & Provenance | Bradley Caldon</title>
+    <meta name="description" content="Terms of acquisition, ownership guidelines, and preservation requirements for Bradley Caldon furniture artworks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Crimson+Text:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', Georgia, serif;
+            background-color: #fcfcfc;
+            color: #0f0f0f;
+            line-height: 1.75;
+            font-size: 17px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        /* Typography */
+        .playfair {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        /* Header */
+        header {
+            padding: 80px 0 50px;
+            border-bottom: 1px solid #d8d8d8;
+            position: relative;
+            background: linear-gradient(180deg, #fcfcfc 0%, #f9f9f9 100%);
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .brand-link {
+            color: #0a0a0a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .brand-link:hover {
+            color: #2a2a2a;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            line-height: 1.05;
+        }
+
+        .page-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 300;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Main Content */
+        main {
+            padding: 80px 0;
+        }
+
+        .page-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 200;
+            color: #0a0a0a;
+            margin-bottom: 40px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .page-intro {
+            font-size: 1.2rem;
+            color: #3a3a3a;
+            font-weight: 300;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 80px;
+            font-style: italic;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Section Styling */
+        .terms-section {
+            margin-bottom: 80px;
+            padding: 60px 50px;
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.06);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 200;
+            color: #0a0a0a;
+            margin-bottom: 35px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            color: #666;
+            font-weight: 300;
+            text-align: center;
+            margin-bottom: 40px;
+            font-style: italic;
+            letter-spacing: 0.5px;
+        }
+
+        .terms-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .term-item {
+            border-left: 3px solid #e8e8e8;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .term-number {
+            position: absolute;
+            left: -12px;
+            top: -5px;
+            width: 24px;
+            height: 24px;
+            background: #fcfcfc;
+            border: 2px solid #e8e8e8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #888;
+            font-weight: 400;
+        }
+
+        .term-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: #0a0a0a;
+            margin-bottom: 15px;
+        }
+
+        .term-description {
+            color: #4a4a4a;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .term-details {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        /* Special Sections */
+        .intellectual-property {
+            background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+            border-left: 4px solid #8a8a8a;
+        }
+
+        .resale-policy {
+            background: linear-gradient(135deg, #fafafa 0%, #f4f4f4 100%);
+            border-left: 4px solid #b8860b;
+        }
+
+        .preservation {
+            background: linear-gradient(135deg, #f9f9f9 0%, #f2f2f2 100%);
+            border-left: 4px solid #2d5f2f;
+        }
+
+        /* Acquisition Process */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 40px 30px;
+            background: #ffffff;
+            border: 1px solid #f0f0f0;
+            transition: all 0.3s ease;
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .step-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 200;
+            color: #c0c0c0;
+            margin-bottom: 20px;
+        }
+
+        .step-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #0a0a0a;
+            margin-bottom: 15px;
+        }
+
+        .step-description {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: #0a0a0a;
+            color: #f5f5f5;
+            margin: 80px -40px 0;
+            padding: 80px 40px;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 200;
+            margin-bottom: 30px;
+            color: #f5f5f5;
+        }
+
+        .contact-text {
+            color: #c8c8c8;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-email a {
+            color: #f5f5f5;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #555;
+            padding-bottom: 3px;
+            transition: all 0.4s ease;
+        }
+
+        .contact-email a:hover {
+            border-bottom-color: #f5f5f5;
+            letter-spacing: 1.5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 25px;
+            }
+
+            .brand-name {
+                font-size: 2.2rem;
+            }
+
+            .page-title {
+                font-size: 2.4rem;
+            }
+
+            .terms-section {
+                padding: 40px 30px;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .contact-section {
+                margin-left: -25px;
+                margin-right: -25px;
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+        }
+
+        /* Elegant animations */
+        .terms-section {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .terms-section:nth-child(1) { animation-delay: 0.1s; }
+        .terms-section:nth-child(2) { animation-delay: 0.2s; }
+        .terms-section:nth-child(3) { animation-delay: 0.3s; }
+        .terms-section:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <a href="index.html" class="brand-link">
+                    <h1 class="brand-name playfair">Bradley Caldon</h1>
+                </a>
+                <div class="page-subtitle">Private Atelier</div>
+            </div>
+        </header>
+
+        <main>
+            <h1 class="page-title playfair">Acquisition Terms & Provenance</h1>
+            <p class="page-intro">
+                The acquisition of Bradley Caldon furniture represents an investment in artistic excellence 
+                and cultural heritage, governed by principles that ensure the integrity and preservation 
+                of each work for future generations.
+            </p>
+
+            <section class="terms-section">
+                <h2 class="section-title playfair">Acquisition Process</h2>
+                <p class="section-subtitle">A considered approach to collecting exceptional furniture</p>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">I</div>
+                        <h3 class="step-title playfair">Initial Inquiry</h3>
+                        <p class="step-description">Serious collectors submit expressions of interest with background information and collecting philosophy.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">II</div>
+                        <h3 class="step-title playfair">Private Consultation</h3>
+                        <p class="step-description">Qualified inquiries result in confidential discussions regarding available works and collection alignment.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">III</div>
+                        <h3 class="step-title playfair">Formal Agreement</h3>
+                        <p class="step-description">Acquisition terms are established, including provenance documentation and preservation requirements.</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">IV</div>
+                        <h3 class="step-title playfair">Delivery & Registration</h3>
+                        <p class="step-description">White-glove delivery with formal registration in the Caldon Provenance Registry.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terms-section intellectual-property">
+                <h2 class="section-title playfair">Intellectual Property & Artistic Integrity</h2>
+                <p class="section-subtitle">Protecting the artistic vision and cultural significance</p>
+                
+                <div class="terms-grid">
+                    <div class="term-item">
+                        <div class="term-number">1</div>
+                        <h3 class="term-title playfair">Artistic Authorship</h3>
+                        <p class="term-description">
+                            Each piece remains the intellectual property of Bradley Caldon as the creating artist. 
+                            The acquisition grants ownership of the physical object while preserving all artistic rights.
+                        </p>
+                        <p class="term-details">
+                            This includes reproduction rights, attribution requirements, and artistic integrity protections 
+                            similar to those governing fine art acquisitions.
+                        </p>
+                    </div>
+                    
+                    <div class="term-item">
+                        <div class="term-number">2</div>
+                        <h3 class="term-title playfair">Modification Prohibition</h3>
+                        <p class="term-description">
+                            No structural modifications, alterations, or customizations may be made to any piece 
+                            without explicit written consent from the atelier.
+                        </p>
+                        <p class="term-details">
+                            This preserves the artistic integrity and ensures the work remains an authentic 
+                            representation of the artist's vision and craftsmanship.
+                        </p>
+                    </div>
+                    
+                    <div class="term-item">
+                        <div class="term-number">3</div>
+                        <h3 class="term-title playfair">Attribution Requirements</h3>
+                        <p class="term-description">
+                            All public displays, publications, or references must include proper attribution 
+                            to Bradley Caldon and the year of creation.
+                        </p>
+                        <p class="term-details">
+                            This ensures the cultural and historical record remains accurate and protects 
+                            the artistic legacy of each work.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terms-section resale-policy">
+                <h2 class="section-title playfair">Resale Rights & Market Participation</h2>
+                <p class="section-subtitle">Maintaining market integrity and artistic value</p>
+                
+                <div class="terms-grid">
+                    <div class="term-item">
+                        <div class="term-number">1</div>
+                        <h3 class="term-title playfair">Right of First Refusal</h3>
+                        <p class="term-description">
+                            The atelier reserves the right of first refusal on any proposed resale, 
+                            ensuring works may return to the collection when appropriate.
+                        </p>
+                        <p class="term-details">
+                            This right must be exercised within 30 days of written notification and 
+                            at the proposed sale price to third parties.
+                        </p>
+                    </div>
+                    
+                    <div class="term-item">
+                        <div class="term-number">2</div>
+                        <h3 class="term-title playfair">Approved Venues</h3>
+                        <p class="term-description">
+                            Resales must occur through established auction houses, recognized dealers, 
+                            or direct private sale with atelier notification.
+                        </p>
+                        <p class="term-details">
+                            This ensures proper documentation, authentication, and maintenance of 
+                            provenance records for future collectors.
+                        </p>
+                    </div>
+                    
+                    <div class="term-item">
+                        <div class="term-number">3</div>
+                        <h3 class="term-title playfair">Droit de Suite</h3>
+                        <p class="term-description">
+                            A resale royalty of 3% is due to the artist on secondary market transactions 
+                            exceeding the original acquisition price.
+                        </p>
+                        <p class="term-details">
+                            This artist's resale right recognizes the ongoing cultural contribution 
+                            and supports continued artistic production.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="terms-section preservation">
+                <h2 class="section-title playfair">Conservation & Preservation</h2>
+                <p class="section-subtitle">Ensuring longevity for future generations</p>
+                
+                <div class="terms-grid">
+                    <div class="term-item">
+                        <div class="term-number">1</div>
+                        <h3 class="term-title playfair">Environmental Standards</h3>
+                        <p class="term-description">
+                            Pieces must be maintained in stable environments with appropriate temperature, 
+                            humidity, and light controls as specified in the conservation guidelines.
+                        </p>
+                        <p class="term-details">
+                            Detailed care instructions are provided with each acquisition, covering daily 
+                            maintenance and long-term preservation requirements.
+                        </p>
+                    </div>
+                    
+                    <div class="term-item">
+                        <div class="term-number">2</div>
+                        <h3 class="term-title playfair">Professional Conservation</h3>
+                        <p class="term-description">
+                            Any restoration or conservation work must be performed by qualified furniture 
+                            conservators with prior consultation with the atelier.
+                        </p>
+                        <p class="term-details">
+                            This ensures appropriate techniques are used and maintains the integrity 
+                            of original materials and construction methods.
+                        </p>
+                    </div>
+                    
+                    <div class="term-item">
+                        <div class="term-number">3</div>
+                        <h3 class="term-title playfair">Inspection Rights</h3>
+                        <p class="term-description">
+                            The atelier reserves the right to inspect pieces periodically to ensure 
+                            proper care and maintenance standards are being met.
+                        </p>
+                        <p class="term-details">
+                            Inspections are conducted with reasonable notice and aim to support 
+                            collectors in optimal care practices.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="contact-title playfair">Acquisition Inquiries</h2>
+            <p class="contact-text">
+                For detailed discussions regarding acquisition terms, collection opportunities, 
+                or clarification of policies, please contact the atelier directly.
+            </p>
+            <div class="contact-email">
+                <a href="mailto:bradley@caldon.com">bradley@caldon.com</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling enhancement
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add subtle hover effects to term items
+            const termItems = document.querySelectorAll('.term-item');
+            termItems.forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(5px)';
+                    this.style.transition = 'transform 0.3s ease';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

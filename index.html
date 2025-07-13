@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bradley Caldon | Fine Furniture Collection</title>
-    <meta name="description" content="Exceptional handcrafted furniture of museum quality. Limited annual collection for discerning connoisseurs.">
+    <title>Bradley Caldon | Private Atelier</title>
+    <meta name="description" content="Exceptional furniture artistry. Limited annual editions for discerning connoisseurs.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;0,500;1,300&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -16,81 +16,105 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            background-color: #fefefe;
-            color: #1a1a1a;
-            line-height: 1.65;
-            font-size: 16px;
-            font-weight: 300;
-            letter-spacing: 0.2px;
+            font-family: 'Crimson Text', Georgia, serif;
+            background-color: #fcfcfc;
+            color: #0f0f0f;
+            line-height: 1.75;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            overflow-x: hidden;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 0 30px;
+            padding: 0 40px;
         }
 
-        /* Typography */
-        .serif {
-            font-family: 'Cormorant Garamond', Georgia, serif;
+        /* Luxury Typography */
+        .playfair {
+            font-family: 'Playfair Display', Georgia, serif;
         }
 
         /* Header */
         header {
-            padding: 80px 0 50px;
-            border-bottom: 1px solid #e8e8e8;
+            padding: 100px 0 60px;
+            border-bottom: 1px solid #d8d8d8;
             position: relative;
+            background: linear-gradient(180deg, #fcfcfc 0%, #f9f9f9 100%);
         }
 
         .masthead {
             text-align: center;
-            margin-bottom: 60px;
+            margin-bottom: 80px;
+        }
+
+        .atelier-mark {
+            font-size: 0.8rem;
+            color: #8a8a8a;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
         }
 
         .brand-name {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 3.2rem;
-            font-weight: 300;
-            letter-spacing: 3px;
-            color: #0a0a0a;
-            margin-bottom: 12px;
-            line-height: 1.1;
-        }
-
-        .brand-subtitle {
-            font-size: 1.1rem;
-            color: #6a6a6a;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.8rem;
             font-weight: 300;
             letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 40px;
+            color: #0a0a0a;
+            margin-bottom: 15px;
+            line-height: 1.05;
         }
 
-        .nav-divider {
-            width: 60px;
+        .establishment {
+            font-size: 0.9rem;
+            color: #666;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+
+        .ornamental-divider {
+            width: 80px;
             height: 1px;
-            background: #c0c0c0;
-            margin: 0 auto 40px;
+            background: linear-gradient(90deg, transparent 0%, #b8b8b8 50%, transparent 100%);
+            margin: 0 auto 50px;
+            position: relative;
+        }
+
+        .ornamental-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #fcfcfc;
+            color: #b8b8b8;
+            font-size: 0.7rem;
+            padding: 0 10px;
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 60px;
+            gap: 70px;
         }
 
         nav a {
-            color: #2a2a2a;
+            color: #1a1a1a;
             text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 400;
-            letter-spacing: 1px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
             position: relative;
-            padding: 8px 0;
+            padding: 10px 0;
         }
 
         nav a::after {
@@ -100,8 +124,8 @@
             left: 50%;
             width: 0;
             height: 1px;
-            background: #1a1a1a;
-            transition: all 0.3s ease;
+            background: #0a0a0a;
+            transition: all 0.4s ease;
             transform: translateX(-50%);
         }
 
@@ -111,124 +135,156 @@
 
         nav a:hover {
             color: #0a0a0a;
+            letter-spacing: 2px;
         }
 
         /* Hero Section */
         .hero {
-            padding: 100px 0 80px;
+            padding: 120px 0 100px;
             text-align: center;
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
+            position: relative;
         }
 
         .hero-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.8rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
             font-weight: 300;
             color: #0a0a0a;
-            margin-bottom: 35px;
-            line-height: 1.3;
+            margin-bottom: 45px;
+            line-height: 1.25;
             font-style: italic;
         }
 
-        .hero-description {
-            font-size: 1.15rem;
-            color: #4a4a4a;
-            font-weight: 300;
-            line-height: 1.7;
-            max-width: 700px;
-            margin: 0 auto;
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: #3a3a3a;
+            font-weight: 400;
+            line-height: 1.8;
+            max-width: 750px;
+            margin: 0 auto 40px;
+            font-style: italic;
+        }
+
+        .exclusivity-note {
+            font-size: 0.85rem;
+            color: #888;
+            font-weight: 400;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-top: 60px;
         }
 
         /* Philosophy Section */
         .philosophy-section {
-            background: linear-gradient(135deg, #f9f9f9 0%, #f4f4f4 100%);
-            margin: 100px -30px;
-            padding: 100px 30px;
+            background: #0f0f0f;
+            color: #f5f5f5;
+            margin: 120px -40px 0;
+            padding: 120px 40px;
             position: relative;
         }
 
         .philosophy-content {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
             text-align: center;
         }
 
         .philosophy-quote {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
             font-weight: 300;
-            color: #1a1a1a;
+            color: #f5f5f5;
             line-height: 1.4;
             font-style: italic;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .philosophy-attribution {
-            font-size: 0.9rem;
-            color: #8a8a8a;
+            font-size: 0.85rem;
+            color: #aaa;
             font-weight: 400;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             text-transform: uppercase;
         }
 
-        /* Collection Grid */
+        /* Collection Section */
         .collection-section {
-            padding: 120px 0;
+            padding: 140px 0;
+            background: linear-gradient(180deg, #fcfcfc 0%, #f8f8f8 100%);
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 80px;
+            margin-bottom: 100px;
         }
 
         .section-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
             font-weight: 300;
             color: #0a0a0a;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .section-subtitle {
-            font-size: 1rem;
-            color: #6a6a6a;
-            font-weight: 300;
-            letter-spacing: 1px;
+            font-size: 1.1rem;
+            color: #5a5a5a;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            font-style: italic;
         }
 
         .collection-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 80px;
-            margin-top: 60px;
+            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+            gap: 90px;
+            margin-top: 80px;
         }
 
         .piece-card {
             background: #ffffff;
-            box-shadow: 0 4px 40px rgba(0,0,0,0.08);
-            transition: all 0.4s ease;
+            box-shadow: 0 8px 60px rgba(0,0,0,0.12);
+            transition: all 0.5s ease;
             border: 1px solid #f0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .piece-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.3) 50%, transparent 100%);
+            transition: left 0.8s ease;
+        }
+
+        .piece-card:hover::before {
+            left: 100%;
         }
 
         .piece-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 60px rgba(0,0,0,0.15);
+            transform: translateY(-12px);
+            box-shadow: 0 20px 80px rgba(0,0,0,0.2);
         }
 
         .piece-image {
             width: 100%;
-            height: 320px;
+            height: 360px;
             background: linear-gradient(135deg, #fafafa 0%, #ffffff 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #c0c0c0;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            border-bottom: 1px solid #f5f5f5;
+            color: #b8b8b8;
+            font-size: 0.8rem;
+            letter-spacing: 1.5px;
+            border-bottom: 1px solid #f0f0f0;
             position: relative;
-            overflow: hidden;
+            text-transform: uppercase;
         }
 
         .piece-image::before {
@@ -236,62 +292,77 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, transparent 70%);
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(0,0,0,0.04) 0%, transparent 70%);
             transform: translate(-50%, -50%);
         }
 
         .piece-details {
-            padding: 45px 40px;
+            padding: 50px 45px;
         }
 
         .piece-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.6rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
             font-weight: 400;
             color: #0a0a0a;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
             line-height: 1.3;
         }
 
         .piece-description {
-            color: #5a5a5a;
-            font-size: 0.95rem;
-            line-height: 1.7;
-            margin-bottom: 25px;
+            color: #4a4a4a;
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
         }
 
         .piece-meta {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-top: 1px solid #f0f0f0;
-            padding-top: 20px;
+            border-top: 1px solid #e8e8e8;
+            padding-top: 25px;
         }
 
         .piece-year {
-            color: #8a8a8a;
+            color: #888;
             font-size: 0.85rem;
             font-weight: 400;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
         }
 
         .piece-status {
             font-size: 0.8rem;
-            color: #b8860b;
-            font-weight: 500;
-            letter-spacing: 0.5px;
+            font-weight: 600;
+            letter-spacing: 1px;
             text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 2px;
+        }
+
+        .piece-status.available {
+            color: #2d5f2f;
+            background: #e8f5e8;
+        }
+
+        .piece-status.reserved {
+            color: #8b5a00;
+            background: #fff3cd;
+        }
+
+        .piece-status.acquired {
+            color: #6c757d;
+            background: #f8f9fa;
         }
 
         /* Craftsmanship Section */
         .craftsmanship-section {
-            background: #1a1a1a;
-            color: #ffffff;
-            margin: 120px -30px 0;
-            padding: 100px 30px;
+            background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+            margin: 0 -40px;
+            padding: 120px 40px;
         }
 
         .craftsmanship-content {
@@ -300,233 +371,260 @@
         }
 
         .craftsmanship-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.5rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.6rem;
             font-weight: 300;
-            margin-bottom: 50px;
+            margin-bottom: 70px;
             text-align: center;
+            color: #0a0a0a;
         }
 
         .craftsmanship-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 50px;
-            margin-top: 60px;
+            gap: 60px;
+            margin-top: 80px;
         }
 
         .craft-principle {
             text-align: center;
+            padding: 40px 30px;
+            background: #ffffff;
+            border: 1px solid #e8e8e8;
+            transition: all 0.4s ease;
+        }
+
+        .craft-principle:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
         }
 
         .craft-principle h4 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
             font-weight: 400;
-            margin-bottom: 20px;
-            color: #ffffff;
+            margin-bottom: 25px;
+            color: #0a0a0a;
         }
 
         .craft-principle p {
-            color: #b8b8b8;
+            color: #555;
             font-size: 0.95rem;
-            line-height: 1.7;
+            line-height: 1.8;
         }
 
         /* About Section */
         .about-section {
-            padding: 120px 0;
-            background: #fafafa;
-            margin: 0 -30px;
+            padding: 140px 0;
+            background: #fcfcfc;
         }
 
         .about-content {
-            max-width: 750px;
+            max-width: 700px;
             margin: 0 auto;
             text-align: center;
-            padding: 0 30px;
         }
 
         .about-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.3rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
             font-weight: 300;
             color: #0a0a0a;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .about-text {
-            font-size: 1.05rem;
-            color: #4a4a4a;
-            line-height: 1.8;
-            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: #3a3a3a;
+            line-height: 1.9;
+            margin-bottom: 35px;
         }
 
-        /* Contact Section */
-        .contact-section {
-            background: #0a0a0a;
-            color: #ffffff;
-            padding: 100px 0;
+        /* Acquisition Section */
+        .acquisition-section {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #f5f5f5;
+            padding: 120px 0;
             margin-top: 0;
+            position: relative;
         }
 
-        .contact-content {
-            max-width: 600px;
+        .acquisition-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #333 50%, transparent 100%);
+        }
+
+        .acquisition-content {
+            max-width: 650px;
             margin: 0 auto;
             text-align: center;
         }
 
-        .contact-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
+        .acquisition-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
             font-weight: 300;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            color: #f5f5f5;
         }
 
-        .contact-text {
-            color: #b8b8b8;
-            font-size: 1rem;
-            line-height: 1.7;
-            margin-bottom: 40px;
+        .acquisition-text {
+            color: #c8c8c8;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 35px;
+        }
+
+        .acquisition-notice {
+            font-style: italic;
+            color: #aaa;
+            font-size: 0.95rem;
+            margin-bottom: 50px;
+            border-top: 1px solid #333;
+            padding-top: 35px;
         }
 
         .contact-email {
-            margin-top: 50px;
+            margin-top: 60px;
         }
 
         .contact-email a {
-            color: #ffffff;
+            color: #f5f5f5;
             text-decoration: none;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 400;
             letter-spacing: 1px;
-            border-bottom: 1px solid #404040;
-            padding-bottom: 2px;
-            transition: all 0.3s ease;
+            border-bottom: 1px solid #555;
+            padding-bottom: 3px;
+            transition: all 0.4s ease;
         }
 
         .contact-email a:hover {
-            border-bottom-color: #ffffff;
+            border-bottom-color: #f5f5f5;
+            letter-spacing: 1.5px;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
-                padding: 0 20px;
+                padding: 0 25px;
             }
 
             .brand-name {
-                font-size: 2.4rem;
-                letter-spacing: 2px;
+                font-size: 2.8rem;
+                letter-spacing: 1px;
             }
 
             .hero-title {
-                font-size: 2.2rem;
+                font-size: 2.4rem;
             }
 
             .philosophy-quote {
-                font-size: 1.8rem;
+                font-size: 2rem;
             }
 
             .collection-grid {
                 grid-template-columns: 1fr;
-                gap: 50px;
+                gap: 60px;
             }
 
             .piece-card {
-                margin: 0 10px;
+                margin: 0 15px;
             }
 
             nav ul {
                 flex-direction: column;
-                gap: 30px;
+                gap: 35px;
             }
 
             .philosophy-section,
-            .craftsmanship-section,
-            .about-section {
-                margin-left: -20px;
-                margin-right: -20px;
-                padding-left: 20px;
-                padding-right: 20px;
+            .craftsmanship-section {
+                margin-left: -25px;
+                margin-right: -25px;
+                padding-left: 25px;
+                padding-right: 25px;
             }
 
             .craftsmanship-grid {
                 grid-template-columns: 1fr;
-                gap: 40px;
+                gap: 50px;
             }
         }
 
-        /* Smooth animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Elegant loading animation */
-        @keyframes elegantFade {
+        /* Elegant animations */
+        @keyframes sophisticatedFade {
             from {
                 opacity: 0;
-                transform: translateY(20px);
+                transform: translateY(40px) scale(0.98);
             }
             to {
                 opacity: 1;
-                transform: translateY(0);
+                transform: translateY(0) scale(1);
             }
         }
 
         .piece-card {
-            animation: elegantFade 0.6s ease forwards;
+            animation: sophisticatedFade 0.8s ease forwards;
         }
 
         .piece-card:nth-child(1) { animation-delay: 0.1s; }
-        .piece-card:nth-child(2) { animation-delay: 0.2s; }
-        .piece-card:nth-child(3) { animation-delay: 0.3s; }
-        .piece-card:nth-child(4) { animation-delay: 0.4s; }
+        .piece-card:nth-child(2) { animation-delay: 0.3s; }
+        .piece-card:nth-child(3) { animation-delay: 0.5s; }
+        .piece-card:nth-child(4) { animation-delay: 0.7s; }
+
+        /* Luxury cursor effects */
+        .piece-card {
+            cursor: pointer;
+        }
+
+        .piece-card:hover .piece-title {
+            color: #2a2a2a;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
             <div class="masthead">
-                <h1 class="brand-name">Bradley Caldon</h1>
-                <div class="brand-subtitle">Fine Furniture Collection</div>
-                <div class="nav-divider"></div>
+                <div class="atelier-mark">Private Atelier</div>
+                <h1 class="brand-name playfair">Bradley Caldon</h1>
+                <div class="establishment">Established MMXXII</div>
+                <div class="ornamental-divider"></div>
                 <nav>
                     <ul>
                         <li><a href="#philosophy">Philosophy</a></li>
                         <li><a href="#collection">Collection</a></li>
-                        <li><a href="#craftsmanship">Craftsmanship</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Inquiries</a></li>
+                        <li><a href="#craftsmanship">Atelier</a></li>
+                        <li><a href="#about">Provenance</a></li>
+                        <li><a href="#acquisition">Acquisition</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <section class="hero">
-            <h2 class="hero-title">Museum-Quality Furniture for the Discerning Connoisseur</h2>
-            <p class="hero-description">
-                Each piece in our exclusive collection represents the pinnacle of traditional craftsmanship, 
-                meticulously handcrafted using centuries-old techniques and the world's finest materials. 
-                Limited to four exceptional works annually.
+            <h2 class="hero-title playfair">Furniture of Uncompromising Excellence</h2>
+            <p class="hero-subtitle">
+                Each creation represents the culmination of traditional artistry and contemporary precision, 
+                executed with materials of exceptional provenance and techniques refined across generations.
             </p>
+            <div class="exclusivity-note">Limited to Four Annual Editions</div>
         </section>
     </div>
 
     <section id="philosophy" class="philosophy-section">
         <div class="container">
             <div class="philosophy-content">
-                <blockquote class="philosophy-quote">
-                    "True luxury lies not in excess, but in the perfection of essential elements, 
-                    crafted with unwavering devotion to excellence."
+                <blockquote class="philosophy-quote playfair">
+                    "In the pursuit of perfection, we find not mere furniture, 
+                    but the embodiment of timeless elegance and enduring legacy."
                 </blockquote>
-                <div class="philosophy-attribution">— Bradley Caldon</div>
+                <div class="philosophy-attribution">— Master Artisan</div>
             </div>
         </div>
     </section>
@@ -534,43 +632,43 @@
     <div class="container">
         <section id="collection" class="collection-section">
             <div class="section-header">
-                <h2 class="section-title">Current Collection</h2>
-                <p class="section-subtitle">2024 Annual Exhibition</p>
+                <h2 class="section-title playfair">The 2024 Collection</h2>
+                <p class="section-subtitle">Four Exceptional Creations</p>
             </div>
 
             <div class="collection-grid">
                 <article class="piece-card">
                     <div class="piece-image">
-                        Walnut Executive Desk
+                        Walnut Executive Writing Desk
                     </div>
                     <div class="piece-details">
-                        <h3 class="piece-title">American Black Walnut Executive Desk</h3>
+                        <h3 class="piece-title playfair">American Black Walnut Writing Desk</h3>
                         <p class="piece-description">
-                            Crafted from a single extraordinary walnut timber, featuring precision dovetail construction 
-                            and traditional mortise-and-tenon joinery. The desk incorporates a hidden compartment 
-                            and custom brass hardware.
+                            Fashioned from a singular walnut of extraordinary character, this desk features precision-crafted 
+                            dovetail construction and traditional mortise-and-tenon joinery. A concealed compartment and 
+                            bespoke brass appointments complete this distinguished piece.
                         </p>
                         <div class="piece-meta">
-                            <span class="piece-year">2024</span>
-                            <span class="piece-status">Available</span>
+                            <span class="piece-year">Collection MMXXIV</span>
+                            <span class="piece-status available">Available</span>
                         </div>
                     </div>
                 </article>
 
                 <article class="piece-card">
                     <div class="piece-image">
-                        English Oak Dining Table
+                        English Oak Refectory Table
                     </div>
                     <div class="piece-details">
-                        <h3 class="piece-title">English Oak Refectory Table</h3>
+                        <h3 class="piece-title playfair">English Oak Refectory Table</h3>
                         <p class="piece-description">
-                            Hewn from a 300-year-old English oak, this table showcases extraordinary grain patterns. 
-                            Traditional trestle construction with carefully carved details and multiple coats of 
-                            hand-rubbed oil finish.
+                            Hewn from a three-century-old English oak of remarkable grain complexity. 
+                            Traditional trestle architecture enhanced by meticulously carved details and 
+                            finished with successive applications of hand-rubbed oil.
                         </p>
                         <div class="piece-meta">
-                            <span class="piece-year">2024</span>
-                            <span class="piece-status">Reserved</span>
+                            <span class="piece-year">Collection MMXXIV</span>
+                            <span class="piece-status reserved">Reserved</span>
                         </div>
                     </div>
                 </article>
@@ -580,33 +678,33 @@
                         Cherry Library Cabinet
                     </div>
                     <div class="piece-details">
-                        <h3 class="piece-title">Cherry Library Cabinet</h3>
+                        <h3 class="piece-title playfair">Cherry Library Cabinet</h3>
                         <p class="piece-description">
-                            Seven adjustable shelves accommodate rare volumes with precision. Traditional frame-and-panel 
-                            construction ensures structural integrity across centuries, with expertly finished surfaces 
-                            and exceptional finish quality.
+                            Seven precisely adjustable shelves accommodate the most treasured volumes. 
+                            Traditional frame-and-panel construction ensures structural permanence across centuries, 
+                            with surfaces of exceptional refinement.
                         </p>
                         <div class="piece-meta">
-                            <span class="piece-year">2023</span>
-                            <span class="piece-status">Acquired</span>
+                            <span class="piece-year">Collection MMXXIII</span>
+                            <span class="piece-status acquired">Private Collection</span>
                         </div>
                     </div>
                 </article>
 
                 <article class="piece-card">
                     <div class="piece-image">
-                        Figured Maple Side Table
+                        Figured Maple Occasional Table
                     </div>
                     <div class="piece-details">
-                        <h3 class="piece-title">Bird's-Eye Maple Occasional Table</h3>
+                        <h3 class="piece-title playfair">Bird's-Eye Maple Occasional Table</h3>
                         <p class="piece-description">
-                            Showcasing the rare beauty of figured maple, this piece features flowing curves that 
-                            seamlessly integrate legs and tabletop. Each surface is meticulously finished 
-                            to the highest conservation standards.
+                            Celebrating the extraordinary beauty of figured maple through graceful curves 
+                            that unite legs and surface in seamless harmony. Each element meticulously 
+                            finished to reveal the timber's innate magnificence.
                         </p>
                         <div class="piece-meta">
-                            <span class="piece-year">2023</span>
-                            <span class="piece-status">Acquired</span>
+                            <span class="piece-year">Collection MMXXIII</span>
+                            <span class="piece-status acquired">Private Collection</span>
                         </div>
                     </div>
                 </article>
@@ -617,63 +715,69 @@
     <section id="craftsmanship" class="craftsmanship-section">
         <div class="container">
             <div class="craftsmanship-content">
-                <h2 class="craftsmanship-title">The Art of Traditional Craftsmanship</h2>
+                <h2 class="craftsmanship-title playfair">The Artisan's Method</h2>
                 
                 <div class="craftsmanship-grid">
                     <div class="craft-principle">
-                        <h4>Material Selection</h4>
-                        <p>Each timber is personally selected from sustainable sources, often featuring centuries of growth patterns. Materials are air-dried for years to achieve optimal stability and character.</p>
+                        <h4 class="playfair">Material Provenance</h4>
+                        <p>Each timber is personally selected from sources of impeccable reputation, with materials seasoned for years to achieve optimal stability and character expression.</p>
                     </div>
                     
                     <div class="craft-principle">
-                        <h4>Traditional Joinery</h4>
-                        <p>Precision-cut dovetails, mortise-and-tenon joints, and traditional techniques passed down through generations ensure structural integrity that improves with time.</p>
+                        <h4 class="playfair">Classical Joinery</h4>
+                        <p>Precision-executed dovetails, mortise-and-tenon assemblies, and time-honored techniques ensure structural integrity that enhances with age.</p>
                     </div>
                     
                     <div class="craft-principle">
-                        <h4>Exceptional Finishing</h4>
-                        <p>Every surface is expertly prepared and finished using the finest materials and time-honored techniques, ensuring each piece achieves the highest standards of excellence.</p>
+                        <h4 class="playfair">Exceptional Finishing</h4>
+                        <p>Every surface receives meticulous preparation and finishing using only the finest materials and techniques, achieving standards of uncompromising excellence.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="container">
+    <div class="container">
+        <section id="about" class="about-section">
             <div class="about-content">
-                <h2 class="about-title">The Caldon Workshop</h2>
+                <h2 class="about-title playfair">The Caldon Atelier</h2>
                 <p class="about-text">
-                    Bradley Caldon maintains an exclusive workshop dedicated to preserving the highest traditions 
-                    of fine furniture making. Each piece is created without the constraints of commission work, 
-                    allowing complete artistic freedom and ensuring alignment with the most exacting standards.
+                    The Bradley Caldon atelier operates as an exclusive workshop dedicated to preserving 
+                    the highest traditions of furniture artistry. Each piece emerges from a process 
+                    unconstrained by external commissions, ensuring complete creative autonomy and 
+                    adherence to the most exacting standards.
                 </p>
                 <p class="about-text">
-                    Working exclusively with premium materials and both traditional and modern precision techniques, the workshop produces 
-                    only four to five pieces annually. This deliberate limitation ensures each creation receives 
-                    the months of careful attention required to achieve true excellence.
+                    Working exclusively with materials of exceptional provenance and employing both 
+                    traditional techniques and contemporary precision methods, the atelier produces 
+                    only four pieces annually. This deliberate restraint ensures each creation receives 
+                    the months of devoted attention required for true mastery.
                 </p>
                 <p class="about-text">
-                    The collection serves discerning connoisseurs who understand that authentic craftsmanship 
-                    cannot be rushed, and that true luxury lies in the perfection of essential elements 
-                    rather than superficial ornamentation.
+                    These works serve the most discerning connoisseurs who understand that authentic 
+                    artistry cannot be hurried, and that genuine luxury resides in the perfection 
+                    of fundamental elements rather than superficial embellishment.
                 </p>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <section id="contact" class="contact-section">
+    <section id="acquisition" class="acquisition-section">
         <div class="container">
-            <div class="contact-content">
-                <h2 class="contact-title">Private Acquisitions</h2>
-                <p class="contact-text">
-                    Inquiries are welcomed from serious collectors, design professionals, and connoisseurs 
-                    of fine craftsmanship. Each piece includes comprehensive provenance documentation and 
-                    care guidelines for optimal preservation.
+            <div class="acquisition-content">
+                <h2 class="acquisition-title playfair">Private Acquisitions</h2>
+                <p class="acquisition-text">
+                    Inquiries are welcomed exclusively from serious collectors, distinguished interior 
+                    architects, and connoisseurs of exceptional craftsmanship. Each piece is accompanied 
+                    by comprehensive provenance documentation and preservation guidelines.
                 </p>
-                <p class="contact-text">
-                    All works are sold as completed pieces. No commissions are accepted, 
-                    ensuring complete artistic integrity and adherence to the highest standards.
+                <p class="acquisition-text">
+                    The atelier maintains relationships solely with individuals and institutions 
+                    who appreciate the distinction between mere furniture and objects of enduring cultural significance.
+                </p>
+                <p class="acquisition-notice">
+                    All works are presented as completed creations. Commissioned pieces are not undertaken, 
+                    preserving the artistic integrity and uncompromising standards of each collection.
                 </p>
                 <div class="contact-email">
                     <a href="mailto:bradley@caldon.com">bradley@caldon.com</a>
@@ -683,7 +787,7 @@
     </section>
 
     <script>
-        // Smooth scrolling for navigation
+        // Sophisticated scrolling for navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -697,32 +801,49 @@
             });
         });
 
-        // Intersection Observer for elegant animations
+        // Elegant intersection observer
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
+            threshold: 0.15,
+            rootMargin: '0px 0px -80px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
-        // Apply to sections
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Subtle parallax effect for hero
-        window.addEventListener('scroll', () => {
+        // Subtle parallax for hero
+        let ticking = false;
+        
+        function updateParallax() {
             const scrolled = window.pageYOffset;
             const hero = document.querySelector('.hero');
             if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.1}px)`;
+                hero.style.transform = `translateY(${scrolled * 0.05}px)`;
             }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        });
+
+        // Sophisticated hover effects for pieces
+        document.querySelectorAll('.piece-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-12px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
         });
     </script>
 </body>
